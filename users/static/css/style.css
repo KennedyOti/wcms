@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+#main-title{
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+  
+  body {
+    background: #f1f1f1;
+  }
+  .navbar {
+    display: flex;
+    padding: 20px 10px;
+    background: rgb(13, 202, 114);
+    color: #fff;
+  }
+  .logo-text {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .navbar-items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 20px;
+  }
+  .navbar-item {
+    list-style: none;
+    padding: 0px 20px;
+    
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .main-content {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/image3.jpg), no-repeat center center;
+    background-size: cover;
+  }
+  .main-text {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 100px;
+    font-size: 10rem;
+    font-weight: bold;
+  }
+  /* Home Navigation Buttons */
+  .btn-nav{
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .btn-nav a{
+    padding: 20px;
+    background-color: rgb(19, 216, 101);
+    border-radius: 10px;
+    margin: 10px;
+
+  }
+  .btn-nav a:hover{
+    background-color: #000;
+    color: #fff;
+  }
+  /* Search Box */
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .search-box {
+    width: 900px;
+    height: 400px;
+    background: rgba(203, 219, 208, 0.836);
+    margin: auto;
+    padding: 90px;
+    border-radius: 10px;
+  }
+  
+  input[type="text"] {
+    border: none;
+    padding: 10px;
+    width: 280px;
+    border-radius: 5px;
+  }
+  
+  input[type="button"] {
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    width: 300px;
+    color: #fff;
+    left: 65px;
+  }
+  
+  input[type="button"]:hover {
+    background: rgb(27, 209, 3);
+  }
+  
+  select {
+    border: none;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+  }
+  
+  /******** LOGIN PAGE DESIGN*********/
+
+  .form-header-text{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .form-box{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background: #cddee4;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+  /* Login Page CSS */
+
+  body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+      font-family: 'Poppins', sans-serif;
+			background: rgba(193, 245, 221, 0.438) !important;
+		}
+		.user_card {
+			width: 350px;
+			margin-top: auto;
+			margin-bottom: auto;
+			background: rgb(16, 238, 134);
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 10px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;
+
+		}
+
+		.form_container {
+			margin-top: 20px;
+		}
+
+		#form-title{
+			color: #fff;
+		}
+		.login_btn {
+			width: 100%;
+			background: #33ccff !important;
+			color: white !important;
+		}
+		.login_btn:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+		.login_container {
+			padding: 0 2rem;
+		}
+		.input-group-text {
+			background: hsl(130, 91%, 31%) !important;
+			color: white !important;
+			border: 0 !important;
+			border-radius: 0.25rem 0 0 0.25rem !important;
+		}
+		.input_user,
+		.input_pass:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+
+    #messages{
+			background-color: grey;
+			color: #fff;
+			padding: 10px;
+			margin-top: 10px;
+      margin: auto;
+		}
+
+.color{
+  background-color: rgba(20, 235, 163, 0.781);
+}
+
+.feedackbox{
+  background: rgb(225, 235, 227);
+  width: 98%;
+  height: 300px;
+  margin: auto;
+  border-radius: 5px;
+  color: #000;
+  padding: 10px;
+}
+.feedackbox h3{
+  text-align: center;
+}
+
+/*User Sms*/
+
+.user-sms{
+  width: 80%;
+  height: 400px;
+  background: #3bd315;
+  color: #200505;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  animation-name: colorchange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorchange{
+  from {background-color: rgb(30, 255, 0);}
+  to {background-color: yellow;}
+}
