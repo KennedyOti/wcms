@@ -220,6 +220,17 @@ def deleteReport(request, report_id):
     context = {'report':report, 'report_id':report_id}
     return render(request, 'users/deletereport.html', context)
 
+# Delete Requests
+@login_required(login_url='login')
+@allowed_users(allowed_roles=['admin'])
+def deleteRequest(request, request_id):
+    requestmade = ServiceRequest.objects.get(pk=request_id)
+    if request.method == "POST":
+        requestmade.delete()
+        return redirect('viewrequests')
+
+    context = {'requestmade':requestmade, 'request_id':request_id}
+    return render(request, 'users/deleterequest.html', context)
 
 #Collection Centers
 @login_required(login_url='login')

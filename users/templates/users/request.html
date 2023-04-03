@@ -351,6 +351,12 @@
                             <h2>Request Services Here</h2>
                             <form action="{% url 'request' pk=user.id %}" method="POST">
                                 {% csrf_token %}
+                                <label for="">Username</label><br>
+                                {{form.member}}<br>
+                                
+                                <label for="">Request Id</label><br>
+                                {{form.request_id}}<br>
+
                                 <label for="">Full Name</label><br>
                                 {{form.fullname}}<br>
 

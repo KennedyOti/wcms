@@ -347,7 +347,7 @@
                     <div class="container-fluid">
 
                         <!-- Page Heading -->
-                        <h1 class="h3 mb-2 text-gray-800">Reports Information</h1>
+                        <h1 class="h3 mb-2 text-gray-800">Requests Made</h1>
                         
     
                         <!-- DataTales Example -->
@@ -366,6 +366,8 @@
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
+                                                <th>Username</th>
+                                                <th>Request_Id</th>
                                                 <th>Fullname</th>
                                                 <th>Phone</th>
                                                 <th>Email</th>
@@ -382,7 +384,7 @@
                                                 <td>{{report.location}}</td>
                                                 <td>{{report.description}}</td>
                                                 <td>{{report.date_requested}}</td>
-                                                <td><a href="{% url 'deletereport' report %}" class="btn btn-danger">Delete</a></td>
+                                                <td><a href="{% url 'deletereport' report.report_id %}" class="btn btn-danger">Delete</a></td>
                                             </tr>
                                             {% endfor %}
                                         </thead>
