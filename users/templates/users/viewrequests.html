@@ -347,7 +347,7 @@
                     <div class="container-fluid">
 
                         <!-- Page Heading -->
-                        <h1 class="h3 mb-2 text-gray-800">Reports Information</h1>
+                        <h1 class="h3 mb-2 text-gray-800">Requests Made</h1>
                         
     
                         <!-- DataTales Example -->
@@ -366,6 +366,8 @@
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
+                                                <th>Username</th>
+                                                <th>Request_Id</th>
                                                 <th>Fullname</th>
                                                 <th>Phone</th>
                                                 <th>Email</th>
@@ -376,13 +378,15 @@
                                             </tr>
                                             <tr>
                                                 {% for request in requests %}
-                                                <td>{{report.fullname}}</td>
-                                                <td>{{report.phone}}</td>
-                                                <td>{{report.email}}</td>
-                                                <td>{{report.location}}</td>
-                                                <td>{{report.description}}</td>
-                                                <td>{{report.date_requested}}</td>
-                                                <td><a href="{% url 'deletereport' report.report_id %}" class="btn btn-danger">Delete</a></td>
+                                                <td>{{request.member}}</td>
+                                                <td>{{request.request_id}}</td>
+                                                <td>{{request.fullname}}</td>
+                                                <td>{{request.phone}}</td>
+                                                <td>{{request.email}}</td>
+                                                <td>{{request.location}}</td>
+                                                <td>{{request.description}}</td>
+                                                <td>{{request.date_requested}}</td>
+                                                <td><a href="{% url 'deleterequest' request.request_id %}" class="btn btn-danger">Delete</a></td>
                                             </tr>
                                             {% endfor %}
                                         </thead>
