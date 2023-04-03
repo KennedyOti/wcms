@@ -22,5 +22,6 @@ urlpatterns = [
     path('deletecenter/<int:center_id>/', views.deleteCenter, name='deletecenter'),
     path('deletecompany/<int:company_id>/', views.deleteCompany, name='deletecompany'),
     path('deletereport/<int:report_id>/', views.deleteReport, name='deletereport'),
+    path('deleterequest/<int:request_id>/', views.deleteRequest, name='deleterequest'),
     path('addcompany/', views.addCompany, name='addcompany')
 ]
