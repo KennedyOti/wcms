@@ -11,6 +11,7 @@
   
   body {
     background: #f1f1f1;
+    width: 100%;
   }
   .navbar {
     display: flex;
@@ -43,7 +44,7 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../images/image3.jpg), no-repeat center center;
+      url(../images/bio.png), no-repeat center center;
     background-size: cover;
   }
   .main-text {
@@ -79,8 +80,8 @@
     font-weight: bold;
   }
   .search-box {
-    width: 900px;
-    height: 400px;
+    width: 1150px;
+    height: 200px;
     background: rgba(203, 219, 208, 0.836);
     margin: auto;
     padding: 90px;
@@ -220,8 +221,8 @@
 /*User Sms*/
 
 .user-sms{
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: 370px;
   background: #3bd315;
   color: #200505;
   margin: auto;

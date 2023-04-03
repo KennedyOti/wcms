@@ -382,7 +382,7 @@
                                                 <td>{{report.location}}</td>
                                                 <td>{{report.description}}</td>
                                                 <td>{{report.date_requested}}</td>
-                                                <td><a href="{% url 'deletereport' report.report_id %}" class="btn btn-danger">Delete</a></td>
+                                                <td><a href="{% url 'deletereport' report %}" class="btn btn-danger">Delete</a></td>
                                             </tr>
                                             {% endfor %}
                                         </thead>

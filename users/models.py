@@ -32,7 +32,7 @@ class CollectionCenter(models.Model):
 # Service Request Model
 
 class ServiceRequest(models.Model):
-    #member = models.ForeignKey(Member, null=True, on_delete=models.SET_NULL)
+    
     fullname = models.CharField(max_length=200, null=True)
     phone = models.CharField(max_length=200, null=True)
     email = models.CharField(max_length=200, null=True)
